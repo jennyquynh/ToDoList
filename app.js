@@ -16,7 +16,7 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true})
 
 
 //port config
-const port = 3000;
+const port = 5000;
 
 
 //middleware
