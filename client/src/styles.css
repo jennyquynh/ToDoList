@@ -3,3 +3,16 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
+
+
+.main-body {
+  margin-top: 3em;
+}
+
+.enter {
+  margin-bottom: 2em;
+}
+
+.app-body {
+  height: 100vh;
+}

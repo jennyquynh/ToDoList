@@ -15,8 +15,7 @@ router.get('/tasks', (req, res, next) => {
 //add task
 router.post('/task', (req, res, next) => {
     let newTask = new Task ({
-        task: req.body.task,
-        isDone: req.body.isDone
+        task: req.body.task
     });
 
     newTask.save((err, task) => {
@@ -32,7 +31,7 @@ router.post('/task', (req, res, next) => {
 
 
 //delete task
-router.delete('/todo/:id', (req, res, next) => {
+router.delete('/task/:id', (req, res, next) => {
     Task.remove({_id: req.params.id}, (err, result) => {
         if(err)
         {

@@ -27,9 +27,9 @@ export class TaskService {
     }
 
     //delete task
-    deleteTask(id: string)
+    deleteTask(id: any)
     {
-        return this.http.delete('http://localhost:5000/api/contact/' + id)
+        return this.http.delete('http://localhost:5000/api/task/' + id)
         .map(res => res.json());
     }
 }
